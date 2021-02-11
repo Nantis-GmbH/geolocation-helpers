@@ -18,6 +18,12 @@
     "dist",
     "package-lock.json"
   ],
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "remoteTags": true
+  },
   "devDependencies": {
     "@types/jest": "26.0.20",
     "@types/node": "14.14.25",
