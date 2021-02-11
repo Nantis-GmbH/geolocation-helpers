@@ -1,0 +1,27 @@
+{
+  "name": "@nantis/geolocation-helpers",
+  "version": "0.0.1-development",
+  "description": "Geolocation helpers for the Nantis IoT solution",
+  "typings": "dist/index.d.ts",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Nantis GmbH",
+  "homepage": "nantis.de",
+  "license": "BSD-3-Clause",
+  "files": [
+    "README",
+    "LICENSE",
+    "dist",
+    "package-lock.json"
+  ],
+  "devDependencies": {
+    "@types/jest": "26.0.20",
+    "@types/node": "14.14.25",
+    "jest": "26.6.3",
+    "ts-jest": "26.5.1"
+  }
+}
