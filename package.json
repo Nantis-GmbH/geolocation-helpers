@@ -7,7 +7,9 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
   },
   "keywords": [],
   "author": "Nantis GmbH",
@@ -34,6 +36,7 @@
     "husky": "5.0.9",
     "jest": "26.6.3",
     "lint-staged": "10.5.4",
+    "pinst": "2.1.4",
     "prettier": "2.2.1",
     "ts-jest": "26.5.1",
     "typescript": "4.1.5"
