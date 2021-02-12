@@ -1,6 +1,6 @@
 {
   "name": "@nantis/geolocation-helpers",
-  "version": "0.0.1-development",
+  "version": "0.1.0",
   "description": "Geolocation helpers for the Nantis IoT solution",
   "typings": "dist/index.d.ts",
   "main": "index.js",
