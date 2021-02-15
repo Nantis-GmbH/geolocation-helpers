@@ -1,10 +1,20 @@
-export const splitMccMnc = (mccmnc: string) : {mnc: number, mcc: number} => {
-    if(mccmnc.length < 4) {
-        throw "mcc mnc string too short"
-    }
+export const splitMccMnc = (
+	mccmnc: string | number,
+): { mnc: number; mcc: number } => {
+	if (mccmnc == null) {
+		throw 'No mnc mcc provided';
+	}
 
-    return {
-        mcc: parseInt(mccmnc.substr(0, 3)),
-        mnc: parseInt(mccmnc.substr(3))
-    }
-}
+	if (!(typeof mccmnc == 'string')) {
+		mccmnc = mccmnc.toString();
+	}
+
+	if (mccmnc.length < 4) {
+		throw 'mcc mnc string too short';
+	}
+
+	return {
+		mcc: parseInt(mccmnc.substr(0, 3)),
+		mnc: parseInt(mccmnc.substr(3)),
+	};
+};
