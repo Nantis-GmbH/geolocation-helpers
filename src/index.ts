@@ -1,2 +1,2 @@
-export * from './cellIdentifier';
-export * from './splitMccMnc';
+export * from './cellIdentifier'
+export * from './splitMccMnc'
